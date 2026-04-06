@@ -1,0 +1,7 @@
+* {
+    margin: none;
+
+}
+header > nav {
+    border: solid;
+}

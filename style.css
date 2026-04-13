@@ -61,7 +61,7 @@ a:hover {
     font-size: 20px;
 }
 
-#titulo-vagas {
+#banner-vagas {
     margin-top: 25px;
 }
 
@@ -75,7 +75,7 @@ a:hover {
 
 #sonia {
     display: flex;
-    margin: auto;
+    margin:20px auto;
     width: 1400px;
     
     
@@ -97,7 +97,7 @@ a:hover {
     
  
 }
-#Tia {
+#sonnia__foto{
     width: 430px;
     margin: 20px auto;
 

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root{
-    --cor-principal: #3B929C;
-    --cor-secundario: #FFFFFF;
-    --cor-botao: #e78887;
+    --cor-principal: #eeccbb;
+    --cor-secundario: #730662;
+    --cor-botao: #f1731f;
+    --largura-principal: 1600px;
 }
 
 
@@ -46,22 +47,20 @@ ul{
     list-style: none;
 }
 
-a{
+.icones:hover{
+    background-color: var(--cor-secundario);
+    color:  var(--cor-principal);
+}
+
+.icones{
     text-decoration: none;
     color: var(--cor-secundario);
     font-size: 25px;
     border: 2px solid var(--cor-secundario);
     padding: 10px;
     border-radius: 0 20px;
-}
-
-a:hover{
-    background-color: var(--cor-secundario);
-    color:  var(--cor-principal);
-}
-
-.icones{
     padding: 10px 50px; 
+    text-decoration: none;
 }
 
 main {
@@ -70,20 +69,20 @@ main {
 }
 
 #banner{
-    width: 1400px;
+    width: var(--largura-principal);
 
 }
 
 #banner__image{
     margin-top: 10px;
-    width: 1400px;
+    width: var(--largura-principal);
 }
 
 #reservas {
-    width: 1400px;
+    width: var(--largura-principal);
     height: 144px;
-    border: 2px dashed var(--cor-principal);
-    color: var(--cor-principal);
+    border: 2px dashed var(--cor-secundario);
+    color: var(--cor-secundario);
     text-align: center;
     font-size: 20px;
     margin-top: 10px;
@@ -117,13 +116,13 @@ main {
 
 .area-sobre{
     display: flex;
-    width: 1400px;
+    width: var(--largura-principal);
     margin:20px auto;
     justify-content: space-around;
 }
 
 .sobre{
-    color: var(--cor-principal);
+    color: var(--cor-secundario);
     width: 500px;
 }
 
@@ -139,6 +138,12 @@ main {
     font-size: 30px;
  }
 
+ hr {
+    border-color: #730662;
+    width: var(--largura-principal);
+    margin: auto;
+ }
+
  .area-busca{
     margin-top: 100px;
     display: flex;
@@ -148,7 +153,7 @@ main {
 
  .catalogo-titulo{
     font-size: 50px;
-    color:var(--cor-principal);
+    color:var(--cor-secundario);
     margin-bottom: 50px;
  }
 
@@ -156,7 +161,7 @@ main {
     display: flex;
     width: 764px;
     height: 40px;
-    border: 3px solid var(--cor-principal);
+    Border: 3px solid var(--cor-secundario);
     border-radius: 20px;
     padding: 5px;
     justify-content: center;
@@ -178,16 +183,22 @@ main {
  .bordados > a > img{
     width: 400px;
     border-radius: 20px;
+    
  }
 
  .bordados{
     text-align: center;
+    
  }
 
+h3{
+    color: var(--cor-secundario);
+}
  .catalogo{
     margin:100px  auto;
-    width: 1400px;
+    width: var(--largura-principal);
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: ;
     gap: 50px;
  } 

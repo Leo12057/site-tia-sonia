@@ -5,6 +5,7 @@
     --cor-secundario: #730662;
     --cor-botao: #f1731f;
     --largura-principal: 1600px;
+    --largura-celular: 430px;
 }
 
 
@@ -32,7 +33,7 @@ header {
 }
 
 
-nav{
+.area-navegacao{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -199,6 +200,105 @@ h3{
     width: var(--largura-principal);
     display: flex;
     justify-content: center;
-    flex-wrap: ;
+    flex-wrap: wrap;
     gap: 50px;
  } 
+
+@media (max-width:430px) {
+
+    header {
+    width: var(--largura-celular);
+    height: 90px;
+    }
+
+    .area-navegacao {
+    width: var(--largura-celular);
+    height: 90px;
+    justify-content: center;
+    }
+
+    .logo {
+        display:none;
+    }
+    
+    ul {
+        gap: 15px;
+        
+    }
+    .icones{
+        font-size: 30px;
+        border: none;
+        padding: 25px;
+    }
+
+    .icones:hover {
+        background-color: none;
+        color: none;
+
+    }
+    #banner {
+        width: 430px;
+    }
+    #banner__image {
+        width: var(--largura-celular);
+    }
+    #reservas {
+        width: 390px;
+    }
+    #reservas__titulo{
+        font-size: 22px;
+        border-width: 2px;
+    }
+
+    #reservas__botao {
+        padding: 10px 30px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+
+    .sobre {
+        width: var(--largura-celular);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .area-sobre {
+        flex-direction: column;
+    }
+    .sobre__titulo {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .sobre__texto {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .sobre__foto {
+        width: 400px;
+        border-radius: 100px;
+        padding: 10px;
+    }
+
+    .catalogo {
+        width: var(--largura-celular);
+    }
+
+    .area-busca{
+        width: var(--largura-celular);
+    }
+
+    .busca{
+        width: 400px;
+    }
+
+    .catalogo-titulo{
+        font-size: 35px;
+        
+    }
+
+
+}
+

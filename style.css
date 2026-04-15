@@ -1,118 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
-    font-family: "Grand Hotel", cursive;
+    box-sizing: border border-box;
+    font-family: sans-serif;
+
 }
 
-header {
-    background-color: #3b929c;
-    width: 100%;
-    height: 110px;
-    margin: 0;
-}
-nav {
-    margin: 0;
+body{
+    height: 100vh;
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.dock {
+    display:flex;
+    gap: 25px;
+    padding: 18px 35px;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.icones{
+    font-size: 38px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.25s;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 110px;
-    width: 90%;
 }
 
-ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
+.icones:hover {
+    transform: translateY(-15px) scale(1.7);
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-    font-family: "Saira Stencil", sans-serif;
-    font-size: 20px; 
-    border: 2px solid #fff;
-    padding: 10px 40px;
-    border-radius: 0 20px;
-}
-a:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-
-#banner{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 30px;
-    gap: 40px;
-}
-
-
-
-#banner__vagas   {
-    width: 1400px;
-    height: 144px;
-    border: 3px dashed #000;
-    text-align: center;
-    gap: 50px;
-    font-size: 20px;
-}
-
-#banner-vagas {
-    margin-top: 25px;
-}
-
-#banner__botao {
-    border:none;
-    border-radius: 8px;
-    background-color: #3b929c;
-    margin-top: 10px;
-    font-family: "Grand Hotel", cursive;
-}
-
-#sonia {
-    display: flex;
-    margin:20px auto;
-    width: 1400px;
-    
-    
-}
-
-#sonia__titulo{
-    width: 550px;
-    text-align: center;
-    font-size: 50px;
-    color: #3b929c;
+.icones:hover i {
+    animation: bounce 0.4s ease;
 
 }
-
-#sonia__texto {
-    width: 700px;
-    font-family: "Grand Hotel", cursive;
-    font-size: 32px;
-    color: #3b929c;
-    
  
+bounce {
+    0%{
+    transform: translateY(0);    
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
-#sonnia__foto{
-    width: 430px;
-    margin: 20px auto;
-
- 
-}
-
-footer {
-    width: 100%;
-    height: 110px;
-    background-color: #3b929c;
-    display: flex;
-}
-
-#Agradecimento__texto {
-    margin: auto;
-    color: #fff;
-    font-size: 20px;
+.dock:hover{
+    transform: scale(1.05);
 }

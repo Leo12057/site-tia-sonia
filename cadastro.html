@@ -9,26 +9,87 @@
 </head>
 <body>
     
-    <main>
-        <section>
-            <h1>Cadastro de Usuário</h1>            
+    <main class="area-cadastro">
+        <section class="area-titulo">
+            <h1>Cadastro</h1>            
         </section>
         <section>
         
-            <form action="#">
+            <form action="#" class="form-cadastro">
+
                 <div class="area-nome">
                     <div class="Area-nome">
-                        <label for="#">Nome</label>
-                        <input type="text" id="nome" required>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="digite o seu nome" required>
                     </div>
-                    <div class="Area-Sobrenome">
-                        <label for="#">Sobrenome</label>
-                        <input type="text" id="Sobrenome">
+                    <div class="Últinmo-Sobrenome">
+                        <label for="Sobrenome">Sobrenome</label>
+                        <input type="text" id="Sobrenome" placeholder="Digite o seu Sobrenome" required>
                     </div>
-                    <div>
-                        <button type="submit">cadastrar</button>
+                </div> 
+
+                <div class="area-acesso">
+                    <div class="email">
+                        <label for="email" >email</label>
+                         <input type="email" id="email" placeholder="Digite o seu email" required>
                     </div>
-               </div>
+                    <div class="senha">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" placeholder="●●●●●●●●" required>
+                    </div>
+                </div>
+
+                <div class="area-contato">
+                    <div class="ddd">
+                        <label for="ddd">ddd</label>
+                        <input type="number" max="99" id="ddd" placeholder="ddd" required>
+                    </div>
+                    <div class="telefone">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" placeholder="Digite Seu Número de Telefone" required>
+                    </div>
+                </div>
+
+                <div class="area-endereco">
+                    <div class="endereco">
+                    <label for="endereco">endereço</label>
+                    <input type="text" id="endereco" placeholder="Digite o seu Endereço" required>
+                </div>
+                <div class="numero">
+                    <label for="numero">Número</label>
+                    <input type="number" id="cidade"  placeholder="000">
+                </div>
+                <div class="cidade">
+                        <label for="cidade">cidade</label>
+                        <input type="text" id="cidade" placeholder="cidade">
+                </div>
+                <di class="cep">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" placeholder="00000-000" required>
+                </di>
+                </div>
+
+                <div class="area-dados">
+                    <div class="data-nascimento">
+                        <label for="data-nascimento"> Data de Nascimento</label>
+                        <input type="date" id="data-nascimento" required>
+                    </div>
+                    <div class="genero">
+                        <label for="genero">Gênero</label>
+                        <select id="genero" required>
+                            <option value="" disabled selected>Selecione seu gênero</option>
+                            <option value="#">Feminino</option>
+                            <option value="#">Masculino</option>
+                            <option value="#">Outro</option>
+                            <option value="#">Prefiro não responder</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="area-botao">
+                    <button type="submit" id="botao-cadastrar">cadastrar</button>
+                    <a href="#" class="link-login">Já possui uma conta? Acesse Agora</a>
+                </div>
             </form>
         </section>
     </main>

@@ -204,6 +204,24 @@ h3{
     gap: 50px;
  } 
 
+ .rodape {
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundario);
+    font-size: 1.3rem;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+
+ }
+
+.nav-rodape p{
+    margin-top: 10px;
+}
+
 @media (max-width:430px) {
 
     header {
